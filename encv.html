@@ -3,63 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV - Samar Hamed</title>
+  <title>My CV – Samar Hamed</title>
 
   <!-- Bootstrap & Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="enstyle.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-sidebar shadow-sm px-4">
+  <nav class="navbar fixed-top custom-navbar shadow-sm px-4">
     <div class="container-fluid d-flex justify-content-end">
-      <a class="btn btn-outline-light d-flex align-items-center" href="index.html">
-        <i class="bi bi-globe"></i>&nbsp; Arabic
+      <a class="btn btn-outline-dark d-flex align-items-center" href="index.html">
+        <i class="bi bi-globe2 me-2"></i> Arabic Version
       </a>
     </div>
   </nav>
 
-  <div class="d-flex flex-column flex-md-row min-vh-100">
-    
-    <!-- Sidebar -->
-    <aside class="bg-sidebar text-white p-4" style="width: 280px;">
-      <div class="text-center mb-4">
-        <img src="profile.jpg" class="img-fluid rounded-circle mb-3" alt="Profile Photo" />
-        <h2>Samar Hamed</h2>
-        <p class="text-light">Frontend Developer</p>
+  <!-- Header with profile and title -->
+  <div class="page-header text-white py-4 compensate-navbar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <!-- Profile -->
+      <div class="text-center mb-3 mb-md-0">
+        <img src="profile.jpg" class="img-fluid rounded-circle mb-2" alt="Profile Photo" style="height: 100px;" />
+        <p class="text-light mb-0">Samar Hamed</p>
       </div>
-      <hr />
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#about" class="nav-link text-white"><i class="bi bi-person-fill"></i> About</a></li>
-        <li class="nav-item mb-2"><a href="#education" class="nav-link text-white"><i class="bi bi-mortarboard-fill"></i> Education</a></li>
-        <li class="nav-item mb-2"><a href="#skills" class="nav-link text-white"><i class="bi bi-gear-fill"></i> Skills</a></li>
-        <li class="nav-item mb-2"><a href="#projects" class="nav-link text-white"><i class="bi bi-kanban"></i> Projects</a></li>
-        <li class="nav-item mb-2"><a href="#contact" class="nav-link text-white"><i class="bi bi-envelope-fill"></i> Contact</a></li>
-      </ul>
-    </aside>
+      <!-- Title -->
+      <h1 class="text-gold text-center text-md-start flex-grow-1">Application Developer at the Syrian Ministry of Health</h1>
+    </div>
+  </div>
 
-    <!-- Main Content -->
+  <div class="min-vh-100">
     <main class="flex-grow-1 p-4">
       <section id="about">
         <h3 class="section-title">About Me</h3>
-        <p>Creative frontend developer with expertise in elegant and user-friendly UI design. Experienced in building dynamic web applications and integrating with databases using Flask and PostgreSQL.</p>
+        <p>
+          Application developer and front-end designer with a strong focus on improving user experience visually and interactively. Passionate about learning and deeply interested in data analytics techniques and digital innovation.
+        </p>
       </section>
 
       <section id="education">
         <h3 class="section-title">Education</h3>
-        <p>Information Engineering - Software Engineering and Information Systems - University of Damascus</p>
+        <p>
+          Bachelor of Computer Engineering – Software and Information Systems<br>
+          Damascus University, 2005–2009
+        </p>
       </section>
 
       <section id="skills">
         <h3 class="section-title">Technical Skills</h3>
         <div class="row">
-          <div class="col-6 mb-2">HTML / CSS / Bootstrap</div>
-          <div class="col-6 mb-2">Flask / PostgreSQL / psycopg2</div>
-          <div class="col-6 mb-2">Responsive Design / Flexbox</div>
-          <div class="col-6 mb-2">Git / GitHub / VS Code</div>
+          <div class="col-12 mb-1">Front-end Design: HTML / CSS / Bootstrap / JavaScript</div>
+          <div class="col-12 mb-1">Designs aligned with Syrian cultural identity</div>
+          <div class="col-12 mb-1">Database design, management, and analytics: PostgreSQL / SQL Server</div>
+          <div class="col-12 mb-1">Backend development: ASP.NET with C#, Java, Python</div>
+          <div class="col-12 mb-1">Data preparation and visualization: Power Query and Power BI</div>
+          <div class="col-12 mb-1">Survey and data collection: Google Forms with Scripts, LimeSurvey</div>
+          <div class="col-12 mb-1">Prompt engineering using generative AI: Copilot, ChatGPT</div>
         </div>
       </section>
 
@@ -74,22 +76,24 @@
             </h2>
             <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
               <div class="accordion-body">
-                Developed a UI for an educational platform using Flask and Bootstrap, with login system and PostgreSQL integration.
+                Developed a learning platform interface using Flask and Bootstrap, featuring login authentication, dynamic content, and PostgreSQL integration.
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                Task Manager
+                Task Management App
               </button>
             </h2>
             <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
               <div class="accordion-body">
-                Built a task management web app using JavaScript and Flask, with priority-based task classification and interactive UI.
+                Created a task manager with flexible UI, priority categorization, and full-stack backend using Flask and PostgreSQL.
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
@@ -98,19 +102,20 @@
             </h2>
             <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
               <div class="accordion-body">
-                Designed a personal portfolio to showcase projects using Bootstrap Cards and Flexbox, with dark mode support.
+                Designed a modern portfolio with responsive Bootstrap layout, dark mode, smooth scroll animations, and project showcases.
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                Video Summarizer
+                CV Design Platform
               </button>
             </h2>
             <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
               <div class="accordion-body">
-                Developed a tool to summarize educational video content in Arabic using Python and Flask.
+                Built a smart CV design platform that uses AI tools to match candidate profiles with company requirements via intelligent filtering and personalized templates.
               </div>
             </div>
           </div>
@@ -119,8 +124,8 @@
     </main>
   </div>
 
-  <!-- Scroll to top button -->
-  <button onclick="scrollToTop()" class="scroll-top-btn" title="Back to top">
+  <!-- Scroll to Top -->
+  <button onclick="scrollToTop()" class="scroll-top-btn" title="Back to Top" style="display: none;">
     <i class="bi bi-arrow-up-circle-fill"></i>
   </button>
 
@@ -128,33 +133,40 @@
   <footer class="bg-footer text-center py-4" id="contact">
     <div class="container">
       <p class="contact-info">
-        <i class="bi bi-telephone-fill text-gold"></i> <span>099XXXXXXX</span> &nbsp;
-        <i class="bi bi-whatsapp text-gold"></i> <span>+96399XXXXXXX</span> &nbsp;
-        <i class="bi bi-envelope-fill text-gold"></i> <span>samar@example.com</span> &nbsp;
-        <i class="bi bi-github text-gold"></i> <a href="https://github.com/SamarDev" class="text-gold">GitHub</a>
+        <i class="bi bi-telephone-fill text-gold"></i> <span>0933408988</span> &nbsp;
+        <i class="bi bi-whatsapp text-gold"></i> <span>+963933408988</span> &nbsp;
+        <i class="bi bi-envelope-fill text-gold"></i> <span>eng.samar.86@gmail.com</span> &nbsp;
+        <i class="bi bi-github text-gold"></i> <a href="https://github.com/samar-hamed25/" class="text-gold">GitHub</a>
       </p>
       <a href="https://syrianidentity.sy/" target="_blank">
-        <img src="logo.ai.svg" alt="Syrian Identity Symbol" style="height: 60px; margin-top: 10px;" />
+        <img src="logo.ai.svg" alt="Syrian Identity Logo" style="height: 60px; margin-top: 10px;" />
       </a>
       <p class="mt-2 text-gold">© 2025 Samar Hamed – All rights reserved</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+    const scrollBtn = document.querySelector('.scroll-top-btn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
     });
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
   </script>
 </body>
 </html>
