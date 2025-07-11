@@ -1,5 +1,6 @@
+/* Base styles */
 body {
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   background-color: #f5f6f7;
   direction: ltr;
   margin: 0;
@@ -7,111 +8,130 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Compensate for fixed navbar */
+.compensate-navbar {
+  margin-top: 100px;
+}
+
+/* Fixed transparent light gray navbar */
+.custom-navbar {
+  background-color: rgba(245, 245, 245, 0.95);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 64px;
+  z-index: 1050;
+}
+
+/* Navbar button */
+.navbar .btn-outline-dark {
+  border-color: #333;
+  color: #333;
+}
+.navbar .btn-outline-dark:hover {
+  background-color: #b9a779;
+  color: #ffffff;
+  border-color: #b9a779;
+}
+
+/* Header title with decorative background */
+.page-header {
+  background-color: #002623;
+  background-image: url("pattern.svg");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-blend-mode: overlay;
+  opacity: 0.95;
+}
+.page-header h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #b9a779;
+}
+
+/* Headings and text */
 h2, h3, .section-title {
   color: #054239;
   font-weight: 700;
 }
-
 p, li {
   color: #333;
   font-size: 16px;
   line-height: 1.6;
 }
 
+/* Links */
 a {
   color: #b9a779;
   text-decoration: none;
 }
-
 a:hover {
   color: #8a744e;
 }
 
-/* Sidebar */
+/* Sidebar with decorative background */
 .bg-sidebar {
-  background-color: #054239;
+  background-color: #002623;
   background-image: url("pattern.svg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: 100px;
   background-blend-mode: overlay;
   opacity: 0.95;
 }
-
 .nav-item {
   font-size: 16px;
   cursor: pointer;
 }
-
 .nav-item i {
   margin-right: 6px;
   color: #b9a779;
 }
-
 .nav-link {
   color: #f0f2f5;
   padding: 6px 10px;
 }
-
 .nav-link:hover {
   color: #ffffff;
   font-weight: bold;
 }
 
-/* Navbar language button */
-.navbar .btn-outline-light {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.navbar .btn-outline-light:hover {
-  background-color: #b9a779;
-  color: #054239;
-  border-color: #b9a779;
-}
-
-/* Content sections */
+/* Section layout */
 section {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-
 img.rounded-circle {
   border: 3px solid #b9a779;
 }
 
-/* Accordion styling */
+/* Accordion for projects */
 .accordion-button {
   background-color: #e9ecef;
   color: #054239;
   font-weight: bold;
 }
-
 .accordion-body {
   background-color: #fdfdfd;
 }
 
-/* Footer */
+/* Footer with decorative background */
 .bg-footer {
-  background-color: #054239;
+  background-color: #002623;
   background-image: url("pattern.svg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: 100px;
   background-blend-mode: overlay;
   opacity: 0.95;
 }
-
 .text-gold {
   color: #b9a779 !important;
 }
-
 .contact-info {
   color: #ffffff;
   font-size: 16px;
 }
-
 .bg-footer img:hover {
   opacity: 0.8;
   transition: 0.3s ease;
@@ -121,7 +141,7 @@ img.rounded-circle {
 .scroll-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: #b9a779;
   border: none;
   border-radius: 50%;
@@ -129,11 +149,11 @@ img.rounded-circle {
   font-size: 24px;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: background-color 0.3s ease;
+  display: none;
 }
-
 .scroll-top-btn:hover {
   background-color: #8a744e;
 }
